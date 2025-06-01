@@ -6,7 +6,7 @@
 <a href="https://www.linkedin.com/in/yourprofile" target="_blank">
   <img src="https://github.com/blackcater/blackcater/raw/main/images/social-linkedin.svg" height="40" />
 </a>
-<a href="mailto:your.email@example.com">
+<a href="bsherdryd70@gmail.com">
   <img src="https://github.com/blackcater/blackcater/raw/main/images/social-gmail.svg" height="40" />
 </a>
 <a href="https://leetcode.com/yourprofile/">
@@ -16,7 +16,7 @@
 <br />
 <br />
 
-Hi, I'm Basheer Dared, a Computer Science student and C++ developer from [Your Country] 🇮🇶. Passionate about problem solving and software development.
+Hi, I'm Basheer Dared, a Computer Science student and C++ developer from [Baghdad] 🇮🇶. Passionate about problem solving and software development.
 
 <a href="#"><img align="right" src="https://github.com/blackcater/blackcater/raw/main/images/banner.gif" width="200" height="200" /></a>
 
@@ -28,17 +28,17 @@ Hi, I'm Basheer Dared, a Computer Science student and C++ developer from [Your C
 
 ## 🎓 Education
 - **Bachelor of Computer Science**  
-  [Your University Name] - [Expected Graduation Year]  
+  [Almunsour unvircity callge] - [2027]  
   Relevant Courses: Data Structures, Algorithms, Database Systems, (add others)
 
 ## 💻 Projects
-- **[Project Name]** - Short description (Tech used: C++, etc.)
-  - GitHub: [link]
+- **[لعبة حجرة ورقة مقص]** - Short description (Tech used: C++, etc.)
+  - GitHub: [https://github.com/bsherbb/-bsher-bsherbb/edit/main/]
 - **[Project Name]** - Short description
-  - GitHub: [link]
+  - GitHub: [https://github.com/bsherbb/-bsher-bsherbb/edit/main/]
 
 ## 🏆 Achievements
-- [Mention any coding competition rankings, hackathons, or awards]
+- حل مشاكل برمجية صعبة وامتلك خاصية فرق تسد في حل المشاكل]
 - [Certifications if any]
 
 ## 🌟 Currently Learning
