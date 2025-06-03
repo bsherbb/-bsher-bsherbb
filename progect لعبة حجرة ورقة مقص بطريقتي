@@ -1,0 +1,181 @@
+#include<iostream>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int Roundomnumper(int to, int from)
+{
+
+
+	return rand() % (to - from + 1) + from;
+
+
+
+
+
+}
+
+short  Readmanyround(string maseg)
+{
+	int play;
+	cout << maseg << endl;
+	cin >> play;
+
+
+
+	return play;
+
+}
+
+enum choiec { stone = 1, paper = 2, scissors = 3 };
+
+int  intheuser()
+{
+	int user = Readmanyround("Enter the numper your stone=[1], paper=[2], scissors=[3].");
+	if (user == choiec::stone)
+	{
+		cout << "plaer1 choice:stone\n";
+	}
+	else if (user == choiec::paper)
+	{
+		cout << "player1 choice:paper\n";
+
+
+	}
+	else if (user == choiec::scissors)
+	{
+		cout << "plyer1 choice:scissors\n";
+	}
+
+
+	return user;
+}
+
+
+
+
+int  thecomputer()
+{
+	int computer = 0;
+	computer = Roundomnumper(1, 3);
+	if (computer == choiec::stone)
+	{
+
+		cout << "computer choice:stone\n";
+	}
+	else if (computer == choiec::paper)
+	{
+		cout << "computer choice:paper\n";
+	}
+	else if (computer == choiec::scissors)
+	{
+		cout << "computer choice:scissors\n";
+	}
+	return computer;
+}
+
+void   gameResult(int GameRounds, int plyeroneyourtimes, int computerontimes, int finalwiner)
+{
+
+							
+	cout << "-------------------------------------------------------------------" << endl;
+	cout <<   "                     +++++GamOver++++                        " << endl;
+	cout << "-----------------------------------------------------------------------------" << endl;
+		
+	cout << "-------------------------[Game Result]---------------------------------" << endl;
+	cout << "GameRounds   :" << GameRounds << endl;
+	cout << "plyeroneyourtimes  :" << plyeroneyourtimes << endl;
+	cout << "computerontimes  :" << computerontimes << endl;
+	cout << "finalwiner  :" << finalwiner << endl;
+	cout << "---------------------------------------------------------------------------------\n";
+	
+}
+
+void Resetscrean()
+{
+	string  choice = """";
+	do
+	{
+		system("cls");
+		system("Color 07");
+		startGame();
+		cout << "Aree you to play agine[y] or [No]" << endl;
+		cin >> choice;
+		
+	} while (choice == "y"|| choice == "Y");
+
+}
+
+
+
+
+
+
+void startGame()
+{
+
+	int round;
+	int woner = 0;
+	int final = 0;
+
+	cout << "how many round to play" << endl;
+	cin >> round;
+
+
+
+	for (int i = 1; i <= round; i++)
+	{
+		cout << "Round[" << i << "]bigenes:\n";
+		int ply = intheuser();
+		int co = thecomputer();
+
+		if (ply == co)
+		{
+			system("Color 6F");
+			cout << "the no wener2" << endl;
+
+			woner++;
+		}
+		else if (co > ply)
+		{
+			system("Color 4F");
+			cout << "computer is oner5" << endl;
+			woner++;
+		}
+		else if (ply > co)
+		{
+			cout << "the user is oner2" << endl;
+			system("Color 2F");
+			final++;
+		}
+		else if (co > ply)
+		{
+
+			cout << "the computer is oner 4" << endl;
+			system("color4F");
+			woner++;
+
+		}
+	}
+	gameResult(round, final, woner, final);
+
+	Resetscrean();
+}
+
+
+
+
+int main()
+{
+
+
+
+
+
+	srand((unsigned)time(NULL));
+	startGame();
+	return 0;
+}
+
+
+
